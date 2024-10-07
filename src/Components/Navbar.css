@@ -1,0 +1,47 @@
+.nav-container {
+    background-color: rgb(15, 238, 3);
+    justify-content: space-around;
+    transition: all;
+
+}
+.nav-cart-empty-icon{
+    animation-name: icon;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes icon {
+    100%{
+        transform: rotate(90deg)
+    }
+    
+}
+
+.nav-cart-count {
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        top: -15px;
+    }
+
+    100% {
+        top: -5px;
+    }
+
+}
+
+@media all and (max-width:400px) {
+    .nav-container {
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+
+    .nav-home-text {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+
+.home-product-container{
+    width:60vw;
+}
+
+@media all and (max-width:1110px) {
+    .home-product-container{
+        width: 90vw;
+    }
+}
